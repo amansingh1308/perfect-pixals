@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+      @apply font-poppins;
+    }
+/* text color  */
+.textUniversal {
+   
+      background: linear-gradient(90deg, #9133DC 0%, #1767CF 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+}
+.footerBg {
+      background-image: url('./assets/images/imageFooter/footerbg.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+/* text color  */
