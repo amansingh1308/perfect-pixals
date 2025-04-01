@@ -8,7 +8,7 @@ export default {
     extend: {
       fontFamily:{
         poppins: ["Poppins", "sans-serif"],
-        brygada: ["Brygada 1918", "serif"],
+      brygada: ['"Brygada 1918"', "serif"],
         josefin: ["Josefin Sans", "sans-serif"],
       }
     },

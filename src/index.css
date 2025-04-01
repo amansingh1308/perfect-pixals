@@ -7,6 +7,11 @@ body {
       @apply font-poppins;
     }
 /* text color  */
+
+
+.gradientBg{
+      background: linear-gradient(90deg, #9133DC 0%, #1767CF 100%);
+}
 .textUniversal {
    
       background: linear-gradient(90deg, #9133DC 0%, #1767CF 100%);
@@ -19,4 +24,117 @@ body {
       background-position: center;
       background-repeat: no-repeat;
     }
+
+    .heroBg {
+      background-image: url('./assets/images/home/hearobg.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .iconGradient {
+      background: linear-gradient(90deg, #9133DC 0%, #1767CF 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+  }
+  .gradentBorder{
+  
+            border: 2px solid;
+            border-image: linear-gradient(90deg, #9133DC 0%, #1767CF 100%) 1;
+            border-radius: 5px;
+
+  }
+
+  .headerSection{
+      position: absolute;
+      top: 0;
+      left: 0;
+  }
+
+  .menuClip {
+      clip-path: polygon(0 1%, 100% 0, 94% 100%, 7% 100%);
+      border-radius: 1px 0px 70px 76px;
+  }
+
+ .swiper-button-next:after {
+    content: 'Next';
+    font-size: 18px!important;
+        font-family: poppins;
+}
+
+.swiper-button-next {
+    position: absolute!important;
+    top: 91%!important;
+    z-index: 9999!important;
+    right: 24%;
+    background: linear-gradient(90deg, #9133DC 0%, #1767CF 100%);
+  padding: 23px 34px;
+  color: #fff;
+ 
+}
+
+.swiper-wrapper {
+    padding-bottom: 85px;
+}
+
+
+.swiper-button-prev{
+  position: absolute!important;
+     top: 91%!important;
+     z-index: 9999!important;
+     left: 24%;
+     background: linear-gradient(90deg, #9133DC 0%, #1767CF 100%);
+  padding: 23px 33px;
+  color: #fff;
+ 
+ }
+ 
+ .swiper-button-prev:after {
+     content: 'Prev';
+     font-size: 18px!important;
+         font-family: poppins;
+ } 
+
 /* text color  */
+.aboutBg{
+  background-image: url('./assets/images/home/aboutBg.png');
+      background-size: contain;
+      background-position: left;
+      background-repeat: no-repeat;
+}
+
+.aboutTemplate{
+  box-shadow: 0px 1px 6px 0px #cdcdcde3;
+  padding: 12px;
+}
+
+.stepSectionBg{
+  background-image: url('./assets/images/home/stepBg.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+}
+.stepOne{
+  background-image: url('./assets/images/home/step1.png');
+      background-size:contain;
+      background-position: center;
+      background-repeat: no-repeat;
+}
+.stepTwo{
+  background-image: url('./assets/images/home/step2.png');
+      background-size:contain;
+      background-position: center;
+      background-repeat: no-repeat;
+}
+.stepThree{
+  background-image: url('./assets/images/home/step3.png');
+      background-size:contain;
+      background-position: center;
+      background-repeat: no-repeat;
+}
+.formbg{
+  background-image: url('./assets/images/home/formBg.png');
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
