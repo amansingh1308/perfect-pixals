@@ -138,3 +138,70 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.testimonialSliderOpicity .swiper-slide.swiper-slide-next {
+  opacity: 1;
+  border: none;
+  box-shadow: 0px 4px 8px 2px #D49DFF52;
+  padding: 12px;
+}
+
+.testimonialSliderOpicity .swiper-slide{
+  opacity: 0.3;
+  transition: opacity 0.3s ease-in-out;
+  border: 1px solid #777777;
+  margin-top: 3px;
+  padding: 12px;
+}
+
+.testimonialSliderOpicity span.swiper-pagination-bullet:before {
+  position: absolute;
+  content: "";
+  width: 22px;
+  height: 20.5px;
+  border: 2px solid #9133DC;
+  /* border-image: linear-gradient(90deg, #9133DC 0%, #1767CF 100%) 1; */
+  border-radius: 50px;
+  left: -5px;
+  top: -4px;
+}
+.testimonialSliderOpicity span.swiper-pagination-bullet{
+  position: relative;
+  height: 12px;
+  width: 12px;
+  margin-right: 20px!important;
+  opacity: 1;
+  background: #fff;
+}
+
+.testimonialSliderOpicity .swiper-pagination-bullet-active{
+  background: linear-gradient(90deg, #9133DC 0%, #1767CF 100%)!important;
+}
+
+/* Add these styles for the range slider thumbs */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid #6366f1;
+  cursor: pointer;
+  margin-top: -5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid #6366f1;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
