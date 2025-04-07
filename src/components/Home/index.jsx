@@ -38,7 +38,14 @@ const Home = () => {
                     placeholder='Search your template'
                     className='w-[70%] px-2 gradentBorder rounded-md'
                   ></input>
-                  <button className='p-2 gradientBg ml-4 text-white w-[20%]'>Search</button>
+                  <div className='group p-2 cursor-pointer gradientBg ml-4 text-white w-[20%] text-center'>
+                  <button className=' inline-block transition-transform duration-200 group-hover:scale-110  hover:font-[500]'>
+                    
+                    Search
+                    </button>
+
+                  </div>
+                  
                 </div>
 
 
@@ -124,7 +131,10 @@ const Home = () => {
               </div>
 
             </div>
-            <button className='gradientBg text-white   text-[14px] py-2 px-8 mt-10'>Explore More</button>
+            <div className='group gradientBg text-white cursor-pointer text-[14px] py-3 px-8 mt-10 w-1/3 text-center'>
+            <button className='inline-block transition-transform duration-200 group-hover:scale-110 hover:font-[500]  '>Explore More</button>
+            </div>
+            
 
           </div>
         </div>
@@ -276,8 +286,15 @@ const Home = () => {
               </div>
 
               <div className='flex gap-4'>
-                <button type="submit" className='gradientBg text-white py-2 px-12'>Submit</button>
-                <button type="button" className='gradentBorder textUniversal py-2 px-8'>Read More</button>
+
+                <div className='group gradientBg text-white py-3 px-12 text-center cursor-pointer'>
+                <button type="submit" className='inline-block transition-transform duration-200 group-hover:scale-110 hover:font-[500]  '>Submit</button>
+                </div>
+                <div className='group gradentBorder  py-3 px-8 cursor-pointer'>
+                <button type="button" className='textUniversal inline-block transition-transform duration-200 group-hover:scale-110 hover:font-[500]'>Read More</button>
+
+                </div>
+              
               </div>
             </form>
           </div>

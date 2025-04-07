@@ -11,10 +11,10 @@ const Header = () => {
 
   const navLinks = [
     { path: "/", text: "Home" },
-    {path: "/business", text: "Business"},
-    {path: "/invitations", text:"Invitations"},
-    {path:"/annoucement", text: "Annoucement"},
-    {path: "/about", text: "About Us" },
+    { path: "/business", text: "Business" },
+    { path: "/invitations", text: "Invitations" },
+    { path: "/annoucement", text: "Annoucement" },
+    { path: "/about", text: "About Us" },
 
   ]
 
@@ -25,7 +25,7 @@ const Header = () => {
           <Link to="/" className="flex items-center pt-10">
             <img src={Logo} className="mr-3 h-12 " alt="Logo" />
           </Link>
-          
+
           {/* Mobile menu button */}
           <button
             onClick={toggleMenu}
@@ -41,20 +41,20 @@ const Header = () => {
           </button>
 
           <div className="flex items-center lg:order-2">
-          
-            <Link
-              to="#"
-              className=" text-[#9133DC] hover:text-white bg-white hover:bg-gradient-to-r from-[#9133DC] to-[#1767CF] focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mt-10 focus:outline-none "
-            >
-              Contact Us
-            </Link>
+            <div className="group cursor-pointer text-[#9133DC] hover:text-white bg-white hover:bg-gradient-to-r from-[#9133DC] to-[#1767CF] focus:ring-4 focus:ring-orange-300 font-medium text-sm px-4 lg:px-6 py-2 lg:py-2.5 mt-10 focus:outline-none rounded-sm ">
+              <Link to="#">
+                <span className="inline-block transition-transform duration-200 group-hover:scale-110 hover:font-[500]">
+                  Contact Us
+                </span>
+              </Link>
+            </div>
           </div>
+
 
           {/* Navigation Links */}
           <div
-            className={`${
-              isMenuOpen ? 'block' : 'hidden'
-            } w-full lg:flex lg:w-auto lg:order-1 `}
+            className={`${isMenuOpen ? 'block' : 'hidden'
+              } w-full lg:flex lg:w-auto lg:order-1 `}
             id="mobile-menu-2"
           >
             <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0 bg-white pt-11 px-28 pb-5  menuClip">
@@ -62,10 +62,9 @@ const Header = () => {
                 <li key={link.path} >
                   <NavLink
                     to={link.path}
-                    className={({isActive}) =>
-                      `block py-2 pr-4 pl-3 duration-200  ${
-                        isActive ? "text-gradient-to-r from-[#9133DC] to-[#1767CF]" : "text-[#525252]"
-                      } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                    className={({ isActive }) =>
+                      `block py-2 pr-4 pl-3 duration-200 font-josefin font-semibold ${isActive ? "textUniversal" : "text-[#525252]"
+                      } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-[#9133DC] lg:p-0`
                     }
                     onClick={() => setIsMenuOpen(false)}
                   >
