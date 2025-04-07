@@ -2,8 +2,15 @@ import React from 'react'
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 import { HiPhone, HiMail, HiLocationMarker } from 'react-icons/hi';
 import { Link } from 'react-router-dom';
-import bgImage from '../../assets/images/imageFooter/footerbg.png'
-import Logo from '../../assets/images/ps.png'
+import bgImage from '../../assets/images/imageFooter/footerbg.png';
+import Logo from '../../assets/images/ps.png';
+import call from '../../assets/images/footer/call.png';
+import mail from '../../assets/images/footer/envlop.png';
+import facebook from '../../assets/images/footer/facebook.png';
+import instagram from '../../assets/images/footer/instagram.png';
+import linkedin from '../../assets/images/footer/linkedin.png';
+import x from '../../assets/images/footer/x.png';
+import location from '../../assets/images/footer/location.png';
 const Footer = () => {
   return (
     <footer
@@ -19,10 +26,10 @@ const Footer = () => {
             <div>
               <h3 className="text-xl font-semibold mb-4 font-josefin text-[#4A4A4A] ">Follow Us</h3>
               <div className="flex space-x-4">
-                <Link to="#" className="hover:text-blue-500 "><FaFacebookF size={20} className="iconGradient" /></Link >
-                <Link to="#" className="hover:text-blue-400 "><FaTwitter size={20} className="textUniversal"/></Link >
-                <Link to="#" className="hover:text-blue-600 "><FaLinkedinIn size={20} className="textUniversal"/></Link >
-                <Link to="#" className="hover:text-pink-600 "><FaInstagram size={20} className="textUniversal"/></Link >
+                <Link to="#" className="hover:text-blue-500 "><img src={facebook}/></Link >
+                <Link to="#" className="hover:text-blue-400 "><img src={instagram}/></Link >
+                <Link to="#" className="hover:text-blue-600 "><img src={linkedin}/></Link >
+                <Link to="#" className="hover:text-pink-600 "><img src={x}/></Link >
               </div>
             </div>
           </div>
@@ -38,21 +45,21 @@ const Footer = () => {
               <li><Link to="#" className="text-[#4A4A4A] hover:text-white transition-colors">Contact</Link ></li>
             </ul>
           </div>
-
+{/*  */}
           {/* Third Column */}
           <div>
             <h3 className="text-xl font-semibold mb-4 font-josefin text-[#393939]">Contact Details</h3>
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
-                <HiPhone className="text-[#4A4A4A]" size={20} />
+              <img src={call}/>
                 <span className="text-[#4A4A4A]">+1 234 567 890</span>
               </div>
               <div className="flex items-center space-x-3">
-                <HiMail className="text-[#4A4A4A]" size={20} />
+              <img src={mail}/>
                 <span className="text-[#4A4A4A]">info@example.com</span>
               </div>
               <div className="flex items-center space-x-3">
-                <HiLocationMarker className="text-[#4A4A4A]" size={20} />
+              <img src={location}/>
                 <span className="text-[#4A4A4A]">123 Street Name, City, Country</span>
               </div>
             </div>

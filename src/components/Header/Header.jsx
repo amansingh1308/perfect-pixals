@@ -21,9 +21,9 @@ const Header = () => {
   return (
     <header className="headerSection z-50 w-full">
       <nav className=" px-4 lg:px-6 py-2.5">
-        <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-          <Link to="/" className="flex items-center">
-            <img src={Logo} className="mr-3 h-12" alt="Logo" />
+        <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl ">
+          <Link to="/" className="flex items-center pt-10">
+            <img src={Logo} className="mr-3 h-12 " alt="Logo" />
           </Link>
           
           {/* Mobile menu button */}
@@ -41,15 +41,10 @@ const Header = () => {
           </button>
 
           <div className="flex items-center lg:order-2">
+          
             <Link
               to="#"
-              className=" bg-white text-[#9133DC]  focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none hover:bg-gradient-to-r from-[#9133DC] to-[#1767CF] hover:text-white"
-            >
-              Eng 
-            </Link>
-            <Link
-              to="#"
-              className="text-black text-[#9133DC] hover:text-white bg-white hover:bg-gradient-to-r from-[#9133DC] to-[#1767CF] focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
+              className=" text-[#9133DC] hover:text-white bg-white hover:bg-gradient-to-r from-[#9133DC] to-[#1767CF] focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mt-10 focus:outline-none "
             >
               Contact Us
             </Link>
