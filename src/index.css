@@ -10,13 +10,18 @@ body {
 
 
 .gradientBg{
-      background: linear-gradient(90deg, #9133DC 0%, #1767CF 100%);
+  background: linear-gradient(85deg, #8F34DB 20%, #1767CF 80%);
 }
-.textUniversal {
-   
-      background: linear-gradient(90deg, #9133DC 0%, #1767CF 100%);
+.textgradent:hover{
+  background: linear-gradient(85deg, #8F34DB 20%, #1767CF 80%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+}
+
+.textUniversal {
+  background: linear-gradient(85deg, #8F34DB 20%, #1767CF 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .footerBg {
       background-image: url('./assets/images/imageFooter/footerbg.png');
@@ -137,6 +142,7 @@ body {
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
+  height: 800px;
 }
 
 .testimonialSliderOpicity .swiper-slide.swiper-slide-next {
@@ -205,3 +211,54 @@ input[type="range"]::-moz-range-thumb {
 input[type="range"]:focus {
   outline: none;
 }
+
+/* Invitations Page css  */
+
+.bgInvitastion{
+  background: url(./assets/images/invitation/invitationbg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  
+}
+.bgHeading{
+  height: 700px;
+}
+/* Invitations Page css  */
+
+
+/* menu mobile  */
+
+@media (max-width:768PX){
+  .menuClip {
+    clip-path: polygon(0 1%, 100% 0, 94% 100%, 7% 100%);
+    border-radius: 1px 0px 160px 167px!important;
+    text-align: center;
+}
+}
+
+/* menu mobile  */
+
+/* template singal page css  */
+
+  .singalpageBg{
+    background: url(./assets/images/singalpage/singleurl.png);
+    background-position: center;
+    background-size: cover;
+    
+  }
+.singalpageTitle{
+   height: 500px;
+}
+
+.singleTemplateImg img {
+  /* width:80%;
+  height: 350px;
+  object-fit: cover; */
+}
+.singleTemplateshadow{
+  box-shadow: 0px 1px 6px 0px #9D9D9D40;
+  /* width: 242px; */
+  /* height: 370px; */
+}
+/* template singal page css  */

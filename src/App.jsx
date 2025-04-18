@@ -6,7 +6,7 @@ import Business from './components/Business';
 import Invitations from './components/Invitations';
 import Annoucement from './components/Announcement';
 import About from './components/AboutUs';
-
+import Singaltemplate from './components/singaltemplate';
 function App() {
   return (
     <BrowserRouter>
@@ -17,6 +17,7 @@ function App() {
           <Route path="invitations" element={<Invitations />} />
           <Route path="annoucement" element={<Annoucement />} />
           <Route path="about" element={<About />} />
+          <Route path="single-Services" element={<Singaltemplate/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
