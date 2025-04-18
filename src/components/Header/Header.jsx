@@ -11,13 +11,11 @@ const Header = () => {
 
   const navLinks = [
     { path: "/", text: "Home" },
-    { path: "/business", text: "Business" },
     { path: "/invitations", text: "Invitations" },
-    { path: "/annoucement", text: "Annoucement" },
+    { path: "/annoucement", text: "Annoucement" }, 
+    { path: "/business", text: "Business" },
     { path: "/about", text: "About Us" },
-
   ]
-
   return (
     <header className="headerSection z-50 w-full">
       <nav className=" px-4 lg:px-6 py-2.5">
@@ -59,12 +57,13 @@ const Header = () => {
           >
             <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0 bg-white pt-11 px-28 pb-5  menuClip">
               {navLinks.map((link) => (
-                <li key={link.path} >
+                <li  key={link.path} >
                   <NavLink
                     to={link.path}
                     className={({ isActive }) =>
                       `block py-2 pr-4 pl-3 duration-200 font-josefin font-semibold ${isActive ? "textUniversal" : "text-[#525252]"
-                      } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-[#9133DC] lg:p-0`
+                      } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-[#9133DC]
+                       lg:p-0`
                     }
                     onClick={() => setIsMenuOpen(false)}
                   >

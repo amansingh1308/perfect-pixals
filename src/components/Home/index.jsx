@@ -1,5 +1,4 @@
 import React from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react';
 import img1 from '../../assets/images/home/banner1.png';
 import img2 from '../../assets/images/home/banner2.png';
 import img3 from '../../assets/images/home/banner3.png';
@@ -12,17 +11,14 @@ import stepIcon1 from '../../assets/images/home/stepIcon1.png';
 import stepIcon2 from '../../assets/images/home/stepIcon2.png';
 import stepIcon3 from '../../assets/images/home/stepIcon3.png';
 import contactImg from '../../assets/images/home/fprmimg.png';
-import rating from '../../assets/images/home/rating.png'
-import testi01 from '../../assets/images/home/testi01.png'
-import testi02 from '../../assets/images/home/testimonial02.png'
-
 import Template from '../templates';
-// Import Swiper styles
+import Testimonial from '../Testimonial';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { Autoplay, FreeMode, Navigation } from 'swiper/modules';
-import { Pagination } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, FreeMode, Navigation, Pagination } from 'swiper/modules';
+import ContactForm from '../ContactFrom';
 const Home = () => {
   return (
     <>
@@ -103,9 +99,9 @@ const Home = () => {
           <div className='col-span-12 md:col-span-5' >
             <div>
               <h2 className='font-josefin textUniversal font-semibold text-xl'>About Us</h2>
-              <h3 className='font-brygada text-black font-bold text-3xl mt-3 '>Lorem Ipsum is simply dummy text of the printing</h3>
-              <p className='mt-5 text-sm text-[#777777]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-              <p className='mt-5 text-sm text-[#777777]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              <h3 className='font-brygada text-black font-bold text-3xl mt-3 '>Lorem Ipsum is simply dummy text of the printing</h3>
+              <p className='mt-5 text-sm text-[#777777]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              <p className='mt-5 text-sm text-[#777777]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
             </div>
             <div className='flex mt-5  '>
               < div className='bg-[#F6FAFF] gradentBorder py-2 px-8 font-josefin font-semibold text-[#393939] mr-10'>
@@ -232,210 +228,12 @@ const Home = () => {
       {/* template section  */}
 
       {/* contact form section  */}
-      <div className='formbg'>
-        <div className='grid grid-cols-12 gap-4 max-w-7xl mx-auto py-24'>
-          <div className='col-span-12 md:col-span-8'>
-            < h3 className='font-brygada text-4xl font-semibold'>Looking to customize your template?</h3>
-            <p className='text-[16px] text-[#777777] mt-4 '>Lorem Ipsum is simply dummy text of the printing and type setting industry. </p>
-
-            <form onSubmit={(e) => e.preventDefault()} className='mt-8 space-y-6'>
-              <div className='flex gap-4'>
-                <div className='w-1/2'>
-                  <input
-                    type="text"
-                    name="fullName"
-                    placeholder="Full Name"
-                    className="w-full pb-2 border-b border-gray-300 focus:border-gray-500 outline-none placeholder-gray-500 bg-transparent"
-                    required
-                  />
-                </div>
-
-                <div className='w-1/2'>
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Email Address"
-                    className="w-full pb-2 border-b border-gray-300 focus:border-gray-500 outline-none placeholder-gray-500 bg-transparent"
-                    required
-                  />
-                </div>
-              </div>
-
-              <div>
-                <select
-                  name="subject"
-                  className="w-full pb-2 border-b border-gray-300 focus:border-gray-500 outline-none text-gray-500 bg-transparent"
-                  defaultValue=""
-                  required
-                >
-                  <option value="" disabled>Select Subject</option>
-                  <option value="general">General Inquiry</option>
-                  <option value="support">Technical Support</option>
-                  <option value="custom">Custom Template</option>
-                </select>
-              </div>
-
-              <div>
-                <textarea
-                  name="message"
-                  placeholder="Your Message"
-                  rows="4"
-                  className="w-full pb-2 border-b border-gray-300 focus:border-gray-500 outline-none placeholder-gray-500 resize-none bg-transparent"
-                  required
-                ></textarea>
-              </div>
-
-              <div className='flex gap-4'>
-
-                <div className='group gradientBg text-white py-3 px-12 text-center cursor-pointer'>
-                <button type="submit" className='inline-block transition-transform duration-200 group-hover:scale-110 hover:font-[500]  '>Submit</button>
-                </div>
-                <div className='group gradentBorder  py-3 px-8 cursor-pointer'>
-                <button type="button" className='textUniversal inline-block transition-transform duration-200 group-hover:scale-110 hover:font-[500]'>Read More</button>
-
-                </div>
-              
-              </div>
-            </form>
-          </div>
-          <div className='col-span-12 md:col-span-4'>
-            <img src={contactImg} alt='about' className='inline-block max-w-full ' />
-          </div>
-        </div>
-      </div>
-
+     
+         <ContactForm/>
       {/* contact form section  */}
       {/* testimonials section */}
-      <div className='testimonialSliderOpicity '>
-        <div className='  mx-auto  py-24'>
-
-          <div>
-            <h3 className='textUniversal text-xl font-josefin font-semibold text-center'>Testimonials</h3>
-            <h4 className=' text-4xl font-brygada font-bold mb-4 text-center'>What Our Client Say</h4>
-            <p className='text-[#777777] text-center '>Lorem Ipsum is simply dummy text of the printing and type setting industry.</p>
-          </div>
-          <div className=' mt-10'>
-
-            <Swiper
-              loop={true}
-              slidesPerView={1}
-              spaceBetween={10}
-
-              pagination={{
-                clickable: true,
-              }}
-              autoplay={{
-                delay: 2500,}}
-              breakpoints={{
-                640: {
-                  slidesPerView: 2,
-                  spaceBetween: 20,
-                },
-                768: {
-                  slidesPerView: 3,
-                  spaceBetween: 40,
-                },
-                1024: {
-                  slidesPerView: 3,
-                  spaceBetween: 50,
-                },
-              }}
-              modules={[Pagination, Autoplay, FreeMode]}
-              className="myYSwiper"
-            >
-              <SwiperSlide>
-
-                <div className='testimonialBoxShadow mt-3'>
-                  <p className='text-center text-[#4A4A4A]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-                  <div>
-                    <div className='flex gap-4 mt-5 justify-between'>
-                      <div className='flex gap-4'>
-                        <div>
-                          <img src={testi01}></img>
-                        </div>
-                        <div>
-                          <h3 className='font-josefin font-semibold text-xl'>Snaya Rao</h3>
-                          <p className='text-[#777777]'>CEO, Company Name</p>
-                        </div>
-                      </div>
-                      <div><img src={rating} className='mt-2 w-32' /></div>
-
-                    </div>
-
-                  </div>
-                </div>
-
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className=' pt-3'>
-                  <p className='text-center text-[#4A4A4A]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-                  <div>
-                    <div className='flex gap-4 mt-5 justify-between'>
-                      <div className='flex gap-4'>
-                        <div>
-                          <img src={testi02}></img>
-                        </div>
-                        <div>
-                          <h3 className='font-josefin font-semibold text-xl'>Snaya Rao</h3>
-                          <p className='text-[#777777]'>CEO, Company Name</p>
-                        </div>
-                      </div>
-                      <div><img src={rating} className='mt-2 w-32' /></div>
-
-                    </div>
-
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-
-                <div className=' pt-3'>
-                  <p className='text-center text-[#4A4A4A]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-                  <div>
-                    <div className='flex gap-4 mt-5 justify-between'>
-                      <div className='flex gap-4'>
-                        <div>
-                          <img src={testi01}></img>
-                        </div>
-                        <div>
-                          <h3 className='font-josefin font-semibold text-xl'>Snaya Rao</h3>
-                          <p className='text-[#777777]'>CEO, Company Name</p>
-                        </div>
-                      </div>
-                      <div><img src={rating}  className='mt-2 w-32' /></div>
-
-                    </div>
-
-                  </div>
-                </div>
-
-              </SwiperSlide>
-              <SwiperSlide> 
-                <div className=' pt-3'>
-                <p className='text-center text-[#4A4A4A]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-                <div>
-                  <div className='flex gap-4 mt-5 justify-between'>
-                    <div className='flex gap-4'>
-                      <div>
-                        <img src={testi02}></img>
-                      </div>
-                      <div>
-                        <h3 className='font-josefin font-semibold text-xl'>Snaya Rao</h3>
-                        <p className='text-[#777777]'>CEO, Company Name</p>
-                      </div>
-                    </div>
-                    <div><img src={rating} className='mt-2 w-32' /></div>
-
-                  </div>
-
-                </div>
-              </div>
-              </SwiperSlide>
-            </Swiper>
-          </div>
-        </div>
-      </div>
-
+      
+     <Testimonial/>
 
       {/* testimonial sections  */}
     </>
