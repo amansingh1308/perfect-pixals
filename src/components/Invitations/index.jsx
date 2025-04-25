@@ -4,6 +4,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import CardImg from "../../assets/images/home/weedingCad.png"
 import { BiSolidStar } from "react-icons/bi";
 import ContactForm from '../ContactFrom';
+import Testimonial from '../Testimonial';
 const Invitations = () => {
    const [openAccordion, setOpenAccordion] = useState(null);
    const [minPrice, setMinPrice] = useState(10);
@@ -268,6 +269,7 @@ const Invitations = () => {
          </div>
 
          <ContactForm />
+         <Testimonial/>
 
       </>
    )
