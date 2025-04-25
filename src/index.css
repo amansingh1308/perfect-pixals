@@ -310,6 +310,6 @@ input[type="range"]:focus {
   gap: 40px;
 }
 
-.mySwiper {
+.contactSwiper .mySwiper {
   height: 600px;
 }

@@ -67,7 +67,7 @@ const ContactUs = () => {
               <p className='text-[#777777] mt-3 mb-3 text-center'>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
               <button className='bg-white font-medium text-xl py-3 px-6 rounded-md mt-4 text-[#1767CF] shadow-[0_10px_30px_rgba(0,0,0,0.1)]'>Get Started</button>
             </div>
-            <div className='col-span-12 md:col-span-3'>
+            <div className='col-span-12 md:col-span-3 contactSwiper'>
               <div className="wrapper">
                 {/* Top Swiper with Autoplay (Bottom to Top) */}
                 <Swiper
@@ -126,7 +126,7 @@ const ContactUs = () => {
 
               </div>
             </div>
-            <div className='col-span-12 md:col-span-3 pt-9'>
+            <div className='col-span-12 md:col-span-3 pt-9 contactSwiper'>
               <Swiper
                 direction={'vertical'}
                 slidesPerView={3}
