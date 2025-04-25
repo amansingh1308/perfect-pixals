@@ -12,6 +12,10 @@ body {
 .gradientBg{
   background: linear-gradient(85deg, #8F34DB 20%, #1767CF 80%);
 }
+.gradientBgg:hover{
+  background: linear-gradient(85deg, #8F34DB 20%, #1767CF 80%);
+  -webkit-text-fill-color: #fff;
+}
 .textgradent:hover{
   background: linear-gradient(85deg, #8F34DB 20%, #1767CF 80%);
       -webkit-background-clip: text;
