@@ -40,7 +40,7 @@ const Header = () => {
 
           <div className="flex items-center lg:order-2">
             <div className="group cursor-pointer text-[#9133DC] hover:text-white bg-white hover:bg-gradient-to-r from-[#9133DC] to-[#1767CF] focus:ring-4 focus:ring-orange-300 font-medium text-sm px-4 lg:px-6 py-2 lg:py-2.5 mt-10 focus:outline-none rounded-sm ">
-              <Link to="#">
+              <Link to="/contact" className="flex items-center" onClick={() => setIsMenuOpen(false)}>
                 <span className="inline-block transition-transform duration-200 group-hover:scale-110 hover:font-[500]">
                   Contact Us
                 </span>
