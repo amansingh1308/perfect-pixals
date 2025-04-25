@@ -8,7 +8,50 @@ body {
     }
 /* text color  */
 
+/* bannres background page  */
+.bgInvitastion{
+  background: url(./assets/images/invitation/invitationbg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  
+}
+.bgAnnouncement{
+  background: url(./assets/images/announcement.png);
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  
+}
+.bgBusiness{
+  background: url(./assets/images/businnes.png);
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  
+}
+.AboutbG{
+  background: url(./assets/images/About/aboutBgg.png);
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  
+}
 
+.contactbG{
+  background: url(./assets/images/contactUs/CONTACTUS.png);
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+}
+
+.getStarted{
+  background: url(./assets/images/contactUs/group.png);
+  background-size: cover;
+  background-position: center;
+  
+}
+/* bannres background page  */
 .gradientBg{
   background: linear-gradient(85deg, #8F34DB 20%, #1767CF 80%);
 }
@@ -218,13 +261,7 @@ input[type="range"]:focus {
 
 /* Invitations Page css  */
 
-.bgInvitastion{
-  background: url(./assets/images/invitation/invitationbg.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 700px;
-  
-}
+
 .bgHeading{
   height: 700px;
 }
@@ -266,3 +303,13 @@ input[type="range"]:focus {
   /* height: 370px; */
 }
 /* template singal page css  */
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.mySwiper {
+  height: 600px;
+}
