@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import { useParams } from 'react-router-dom';
+import TemplateData from '../data/TemplateData';
 import { FaStar, FaThumbsUp } from "react-icons/fa";
 import { BiMessageSquareDetail } from "react-icons/bi";
 import { FaFacebookSquare, FaInstagram, FaWhatsapp } from "react-icons/fa";
@@ -13,6 +15,9 @@ import icon4 from '../assets/images/singalpage/creative04.png'
 import premiumIcon from '../assets/images/singalpage/premiumicon.png'
 
 const Singaltemplate = () => {
+  const { id } = useParams();
+  const template = TemplateData.find((t)=> t.id===parseInt(id));
+if (!template) return <div>Template not found!</div>;
   return (
     <>
       <div className='singalpageBg m-6'>
@@ -53,29 +58,21 @@ const Singaltemplate = () => {
                     </div>
                   </div>
                 </div>
-
-
                 <div className="flex  gap-4 items-end justify-end ">
                   <button className="bg-[#F5F3FF] p-2 px-4 text-xs font-brygada text-[#393939] font-semibold">Facebook <FaFacebookSquare className='inline text-[#1877F2] ml-2' /></button>
                   <button className="bg-[#F5F3FF] p-2 px-4 text-xs font-brygada text-[#393939] font-semibold">Instagram <FaInstagram className="inline text-[#E1306C] ml-2" /></button>
                   <button className="bg-[#F5F3FF] p-2 px-4 text-xs font-brygada text-[#393939] font-semibold">WhatsApp <FaWhatsapp className="inline text-[#25D366] ml-2" /></button>
                   <button className="bg-[#F5F3FF] p-2 px-4 text-xs font-brygada text-[#393939] font-semibold">E-Mail <img src={envlope} className='w-3 inline ml-2' /></button>
-
                 </div>
-
               </div>
 
 
               <p className="text-[#777777] text-xl tracking-wider mb-4">
-                Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum
-                has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-                took a galley of type and scrambled it to make a type specimen book.
+               {template.desc1}
               </p>
 
               <p className="text-[#777777] tracking-wider text-xl mb-4">
-                Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum
-                has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-                took a galley of type and scrambled it to make a type specimen book.
+                {template.desc2}
               </p>
 
               <hr className="my-4 border-dashed border-gray-300" />

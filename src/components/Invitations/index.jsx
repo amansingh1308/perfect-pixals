@@ -5,13 +5,15 @@ import CardImg from "../../assets/images/home/weedingCad.png"
 import { BiSolidStar } from "react-icons/bi";
 import ContactForm from '../ContactFrom';
 import Testimonial from '../Testimonial';
+import templateData from '../../data/TemplateData';
+import { Link } from 'react-router-dom';
 const Invitations = () => {
    const [openAccordion, setOpenAccordion] = useState(null);
    const [minPrice, setMinPrice] = useState(10);
    const [maxPrice, setMaxPrice] = useState(150);
    const [isOpen, setIsOpen] = useState(true);
    const [checkedItems, setCheckedItems] = useState([true, false, false, false, false]);
-  
+
    const toggleCheckbox = (index) => {
       const updated = [...checkedItems];
       updated[index] = !updated[index];
@@ -25,17 +27,17 @@ const Invitations = () => {
    const toggleAccordion = (index) => {
       setOpenAccordion(openAccordion === index ? null : index);
       if (index === 0) setSelectedCategory(null);
-    };
-  
-    const handleMinChange = (e) => {
+   };
+
+   const handleMinChange = (e) => {
       const value = Math.min(Number(e.target.value), maxPrice - 10);
       setMinPrice(value);
-    };
-  
-    const handleMaxChange = (e) => {
+   };
+
+   const handleMaxChange = (e) => {
       const value = Math.max(Number(e.target.value), minPrice + 10);
       setMaxPrice(value);
-    };
+   };
    return (
       <>
          <div className="bgInvitastion m-6 ">
@@ -233,29 +235,40 @@ const Invitations = () => {
                         {data.map((data, index) => (
                            <li key={index} className='textgradent font-medium'>{data.title}</li>
                         ))
-
                         }
-
                      </ul>
                   </div>
 
-                  <div className='grid grid-cols-12 gap-4'>
-                     {[0, 1, 2, 3, 4, 5].map((_, index) => (
-                        <div className='col-span-4 mb-11 colBoxShadow border border-[#E1E9F3] rounded-sm shadow-sm  p-5'
+                  <div className='grid grid-cols-12 gap-4 '>
+                     {templateData.map((data, index) => (
+                        <div className='group col-span-4 mb-11 colBoxShadow border border-[#E1E9F3] rounded-sm shadow-sm  p-5 hoverShow'
                            key={index}
                         >
-                           <img src={CardImg} alt="Card" className='w-full h-[340px] rounded-md ' />
-                           <h2 className='font-josefin font-bold text-[#393939] text-xl text-center'>Lorem Ipsum</h2>
-                           <p className='font-poppins text-[#777777] text-center'>Lorem Ipsum Dolor Text</p>
-                           <div className='flex gap-2 items-center justify-center'>
-                              <BiSolidStar key={index} color='#FF8A00' />
-                              <BiSolidStar key={index} color='#FF8A00' />
-                              <BiSolidStar key={index} color='#FF8A00' />
-                              <BiSolidStar key={index} color='#FF8A00' />
-                              <BiSolidStar key={index} color='#FF8A00' />
+                           <img src={data.img} alt="Card" className='w-full h-[340px] rounded-md ' />
+                           <h2 className='font-josefin font-bold text-[#393939] text-xl text-center'>{data.title}</h2>
+                           <div className='group-hover:hidden'>
+                              <p className='font-poppins text-[#777777] text-center'>{data.subtitile}</p>
+                              <div className='flex gap-2 items-center justify-center'>
+                                 <BiSolidStar key={index} color='#FF8A00' />
+                                 <BiSolidStar key={index} color='#FF8A00' />
+                                 <BiSolidStar key={index} color='#FF8A00' />
+                                 <BiSolidStar key={index} color='#FF8A00' />
+                                 <BiSolidStar key={index} color='#FF8A00' />
 
+                              </div>
                            </div>
+                           <div className='hidden  group-hover:block '>
+                              <div className='flex items-center justify-center gap-2'>
+                                 <h3 className='textUniversal font-bold text-xl'>$ 10.00</h3>
+                                 <h3 className='font-medium text-xl text-[#777777] line-through'>$ 10.00</h3>
 
+                              </div>
+                              <div className='mt-10 text-center'>
+                                 <Link to={`/invitations/${data.id}`} className=' gradientBg text-white px-4 py-2 w-full rounded-md mt-5 font-medium'>
+                                    Add to Edit
+                                 </Link>
+                              </div>
+                           </div>
                         </div>
                      ))}
 
@@ -269,7 +282,7 @@ const Invitations = () => {
          </div>
 
          <ContactForm />
-         <Testimonial/>
+         <Testimonial />
 
       </>
    )

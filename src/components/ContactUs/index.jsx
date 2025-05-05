@@ -86,39 +86,39 @@ const ContactUs = () => {
                 >
                   <SwiperSlide className='mb-2' >
                     <div className='shadow-[0_10px_30px_rgba(0,0,0,0.1)] p-2 bg-white  w-fit '>
-                    <img src={top02} />
+                      <img src={top02} />
                     </div>
-                  
+
                   </SwiperSlide>
                   <SwiperSlide className='mb-2' >
                     <div className='shadow-[0_10px_30px_rgba(0,0,0,0.1)] p-2 bg-white  w-fit '>
-                    <img src={top01} />
+                      <img src={top01} />
                     </div>
-                  
+
                   </SwiperSlide>
                   <SwiperSlide className='mb-2' >
                     <div className='shadow-[0_10px_30px_rgba(0,0,0,0.1)] p-2 bg-white  w-fit '>
-                    <img src={top03} />
+                      <img src={top03} />
                     </div>
-                  
+
                   </SwiperSlide>
                   <SwiperSlide className='mb-2' >
                     <div className='shadow-[0_10px_30px_rgba(0,0,0,0.1)] p-2 bg-white  w-fit '>
-                    <img src={top02} />
+                      <img src={top02} />
                     </div>
-                  
+
                   </SwiperSlide>
                   <SwiperSlide className='mb-2' >
                     <div className='shadow-[0_10px_30px_rgba(0,0,0,0.1)] p-2 bg-white  w-fit '>
-                    <img src={top01} />
+                      <img src={top01} />
                     </div>
-                  
+
                   </SwiperSlide>
                   <SwiperSlide className='mb-2' >
                     <div className='shadow-[0_10px_30px_rgba(0,0,0,0.1)] p-2 bg-white  w-fit '>
-                    <img src={top03} />
+                      <img src={top03} />
                     </div>
-                  
+
                   </SwiperSlide>
                 </Swiper>
 
@@ -136,55 +136,112 @@ const ContactUs = () => {
                   delay: 2000,
                   disableOnInteraction: false,
                   reverseDirection: true, // This makes it scroll top-to-bottom
-                    }}
+                }}
                 mousewheel={true}
                 pagination={{ clickable: true }}
                 modules={[Mousewheel, Autoplay]} // <-- Autoplay added here
                 className="mySwiper bottomSwiper"
               >
-               <SwiperSlide className='mb-2' >
-                    <div className='shadow-[0_10px_30px_rgba(0,0,0,0.1)] p-2 bg-white  w-fit '>
+                <SwiperSlide className='mb-2' >
+                  <div className='shadow-[0_10px_30px_rgba(0,0,0,0.1)] p-2 bg-white  w-fit '>
                     <img src={bottom01} />
-                    </div>
-                  
-                  </SwiperSlide>
-                  <SwiperSlide className='mb-2' >
-                    <div className='shadow-[0_10px_30px_rgba(0,0,0,0.1)] p-2 bg-white  w-fit '>
+                  </div>
+
+                </SwiperSlide>
+                <SwiperSlide className='mb-2' >
+                  <div className='shadow-[0_10px_30px_rgba(0,0,0,0.1)] p-2 bg-white  w-fit '>
                     <img src={bottom02} />
-                    </div>
-                  
-                  </SwiperSlide>
-                  <SwiperSlide className='mb-2' >
-                    <div className='shadow-[0_10px_30px_rgba(0,0,0,0.1)] p-2 bg-white  w-fit '>
+                  </div>
+
+                </SwiperSlide>
+                <SwiperSlide className='mb-2' >
+                  <div className='shadow-[0_10px_30px_rgba(0,0,0,0.1)] p-2 bg-white  w-fit '>
                     <img src={bottom03} />
-                    </div>
-                  
-                  </SwiperSlide>
-                  <SwiperSlide className='mb-2' >
-                    <div className='shadow-[0_10px_30px_rgba(0,0,0,0.1)] p-2 bg-white  w-fit '>
+                  </div>
+
+                </SwiperSlide>
+                <SwiperSlide className='mb-2' >
+                  <div className='shadow-[0_10px_30px_rgba(0,0,0,0.1)] p-2 bg-white  w-fit '>
                     <img src={bottom01} />
-                    </div>
-                  
-                  </SwiperSlide>
-                  <SwiperSlide className='mb-2' >
-                    <div className='shadow-[0_10px_30px_rgba(0,0,0,0.1)] p-2 bg-white  w-fit '>
+                  </div>
+
+                </SwiperSlide>
+                <SwiperSlide className='mb-2' >
+                  <div className='shadow-[0_10px_30px_rgba(0,0,0,0.1)] p-2 bg-white  w-fit '>
                     <img src={bottom02} />
-                    </div>
-                  
-                  </SwiperSlide>
-                  <SwiperSlide className='mb-2' >
-                    <div className='shadow-[0_10px_30px_rgba(0,0,0,0.1)] p-2 bg-white  w-fit '>
+                  </div>
+
+                </SwiperSlide>
+                <SwiperSlide className='mb-2' >
+                  <div className='shadow-[0_10px_30px_rgba(0,0,0,0.1)] p-2 bg-white  w-fit '>
                     <img src={bottom03} />
-                    </div>
-                  
-                  </SwiperSlide>
+                  </div>
+
+                </SwiperSlide>
               </Swiper>
             </div>
           </div>
         </div>
       </div>
 
+      <div className="max-w-7xl mx-auto px-4 py-16">
+        <div className="grid grid-cols-12 gap-10 shadow-[0_10px_30px_rgba(0,0,0,0.1)] rounded-md p-5">
+          {/* Map Section */}
+          <div className="col-span-12 md:col-span-6">
+            <div className="w-full h-full  overflow-hidden border border-gray-200">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27446.557635316836!2d76.77011655!3d30.7333145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed0be66ec96b%3A0xa5ff67f9527319fe!2sChandigarh!5e0!3m2!1sen!2sin!4v1620120000000!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style={{ border: 0, minHeight: "450px" }}
+                allowFullScreen=""
+                loading="lazy"
+              />
+            </div>
+          </div>
 
+          {/* Contact Form */}
+          <div className="col-span-12 md:col-span-6">
+            <form className="space-y-6">
+              <div>
+                <input
+                  type="text"
+                  placeholder="Full Name"
+                  className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500 shadow-sm font-josefin"
+                />
+              </div>
+              <div>
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500 shadow-sm font-josefin"
+                />
+              </div>
+              <div>
+                <select className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500 text-gray-500 shadow-sm font-josefin">
+                  <option value="">Subject</option>
+                  <option value="general">General Inquiry</option>
+                  <option value="support">Support</option>
+                  <option value="feedback">Feedback</option>
+                </select>
+              </div>
+              <div>
+                <textarea
+                  placeholder="Message"
+                  rows="4"
+                  className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500 shadow-sm font-josefin"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                className="w-full py-3 px-6 text-white bg-[#1767CF] rounded-md hover:bg-blue-600 transition-colors textUniversal gradentBorder font-josefin font-semibold "
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
     </>
   )
 }
