@@ -20,6 +20,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="single-Services" element={<Singaltemplate/>}/>
           <Route path="contact" element={<ContactUs/>}/>
+          <Route path="/invitations/:id" element={<Singaltemplate/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
